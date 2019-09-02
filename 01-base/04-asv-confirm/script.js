@@ -12,5 +12,18 @@
 (function() {
 
     // your code here
+     var responseOne = prompt('What is your age?');
+     var responseTwo = prompt('What is your gender?');
+     var responseThree = prompt('Where do you live?');
+     var txt;
 
+     var total = alert('Your age is: ' + responseOne + '\n Your gender is: ' + responseTwo +
+    '\n Your town is: '+ responseThree);
+     
+     if (confirm('Do you want to confirm this?')) {
+         alert('You pressed OK')
+     } else {
+         alert('You pressed cancel')
+     }
+     
 })();
