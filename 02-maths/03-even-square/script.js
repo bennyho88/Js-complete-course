@@ -14,7 +14,15 @@
     document.getElementById("run").addEventListener("click", function() {
 
         // your code here
+        
+        for(var i = 1 ; i <= 21; i++) {
 
-    });
+            if (Math.pow(i,2) <= 21) {
+                console.log("The square number is " + Math.pow(i,2));
+            } else {
+               break;
+            }
+    }});
 
+    
 })();
