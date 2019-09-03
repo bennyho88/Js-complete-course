@@ -12,19 +12,60 @@
 (function() {
     // to get the value of an input: document.getElementById("element-id").value
 
+    
     document.getElementById("addition").addEventListener("click", function() {
         // perform an addition
+        var inputOne = parseInt(document.getElementById("op-one").value);
+        var inputTwo = parseInt(document.getElementById("op-two").value);
+
+
+        if ( inputOne == "" && inputTwo == "") {
+            console.log("Please put a value")
+        } else {
+            console.log(inputOne + inputTwo)
+        }
+
     });
+
+
+
 
     document.getElementById("substraction").addEventListener("click", function() {
         // perform an substraction
+        var inputOne = parseInt(document.getElementById("op-one").value);
+        var inputTwo = parseInt(document.getElementById("op-two").value);
+
+
+        if ( inputOne == "" && inputTwo == "") {
+            console.log("Please put a value")
+        } else {
+            console.log(inputOne - inputTwo)
+        }
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
         // perform an multiplication
+        var inputOne = parseInt(document.getElementById("op-one").value);
+        var inputTwo = parseInt(document.getElementById("op-two").value);
+
+
+        if ( inputOne == "" && inputTwo == "") {
+            console.log("Please put a value")
+        } else {
+            console.log(inputOne * inputTwo)
+        }
     });
 
     document.getElementById("division").addEventListener("click", function() {
         // perform an division
+        var inputOne = parseInt(document.getElementById("op-one").value);
+        var inputTwo = parseInt(document.getElementById("op-two").value);
+
+
+        if ( inputOne == "" && inputTwo == "") {
+            console.log("Please put a value")
+        } else {
+            console.log(inputOne / inputTwo)
+        }
     });
 })();
