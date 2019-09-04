@@ -9,77 +9,31 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-var additionBtn = document.getElementById('addition');
-var substractionBtn = document.getElementById('substraction');
-var multiplicationBtn = document.getElementById('multiplication');
-var divisionBtn = document.getElementById('division');
-
-
-for(var i = 0; i < 4; i++) {
-    var result;
-
-    if 
-}
-
-/*
-document.getElementById('addition').addEventListener("click", function()  {
-    var inputOne = parseInt(document.getElementById('op-one').value);
-    var inputTwo = parseInt(document.getElementById('op-two').value);
-
-    var actions = document.getElementById('addition');
-
-    switch(actions) {
-        case addition:
-        console.log(inputOne + inputTwo);
-        break;
-        default:
-        console.log("Please put a value");
+(function () {
+    const btns = document.getElementsByTagName('button');
+    const input1 = parseInt(document.getElementById("op-one").value);
+    const input2 = parseInt(document.getElementById("op-two").value);
+    console.log(btns);
+    for (let i = 0; i < btns.length; i++) {
+    btns[i].onclick = () => {
+    switch (btns[i].innerText) {
+    case "+":
+    alert(input1 + input2);
+    break;
+    case "-":
+    alert(input1 - input2);
+    break;
+    case "*":
+    alert(input1 * input2);
+    break;
+    case "×":
+    alert(input1 / input2);
+    break;
+    
+            }
+        }
+    
     }
-});
+    })();
 
-document.getElementById('substraction').addEventListener("click", function()  {
-    var inputOne = parseInt(document.getElementById('op-one').value);
-    var inputTwo = parseInt(document.getElementById('op-two').value);
-
-    var actions = document.getElementById('substraction');
-
-    switch(actions) {
-        case substraction:
-        console.log(inputOne - inputTwo);
-        break;
-        default:
-        console.log("Please put a value");
-    }
-});
-
-document.getElementById('multiplication').addEventListener("click", function()  {
-    var inputOne = parseInt(document.getElementById('op-one').value);
-    var inputTwo = parseInt(document.getElementById('op-two').value);
-
-    var actions = document.getElementById('multiplication');
-
-    switch(actions) {
-        case multiplication:
-        console.log(inputOne * inputTwo);
-        break;
-        default:
-        console.log("Please put a value");
-    }
-});
-
-document.getElementById('division').addEventListener("click", function()  {
-    var inputOne = parseInt(document.getElementById('op-one').value);
-    var inputTwo = parseInt(document.getElementById('op-two').value);
-
-    var actions = document.getElementById('division');
-
-    switch(actions) {
-        case division:
-        console.log(inputOne / inputTwo);
-        break;
-        default:
-        console.log("Please put a value");
-    }
-});
-*/
 

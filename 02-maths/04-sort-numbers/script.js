@@ -17,6 +17,22 @@
 
         // your code here
 
+        var values = document.getElementById('numbers').value;
+        console.log(values);
+        
+        /*
+        var array = [values];
+        array.sort(function(a,b){
+            return a - b
+        });
+
+        console.log(array);
+    
+        */
+        /*
+        var arrayCor = array.sort();
+        console.log(arrayCor);
+        */
     });
 
 })();
