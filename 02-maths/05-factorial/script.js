@@ -11,12 +11,14 @@
 
 (function() {
     
-    // to get the value of an input: document.getElementById("element-id").value
+  // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+  var input = document.getElementById('element-id').value;
 
-        // your code here
+  document.getElementById("run").addEventListener("click", function() {
 
-    });
+      // your code here
+    console.log("hello");
+  });
 
 })();
