@@ -12,5 +12,22 @@
 (function() {
 
     // your code here
+    var button = document.querySelector('#run');
+    
 
+    button.addEventListener('click', function() {
+        var passwordOne = document.querySelector('#pass-one').value;
+    var passwordTwo = document.querySelector('#pass-two').value;
+
+        if (passwordOne === passwordTwo) {
+
+        document.querySelector('.content').style.backgroundColor = "green";
+        } else {
+        document.querySelector('#pass-one').className = "error";
+        document.querySelector('#pass-two').className = "error";
+        }
+
+    })
 })();
+
+

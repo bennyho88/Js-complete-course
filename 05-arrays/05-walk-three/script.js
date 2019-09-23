@@ -40,5 +40,14 @@
     ];
 
     // your code here
+    var button = document.querySelector('#run');
 
+    button.addEventListener('click', function() {
+
+        people.forEach(function(name) {
+
+            var firstName = name['firstname'];
+            console.log(firstName);
+        })
+    })
 })();

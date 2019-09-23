@@ -28,4 +28,18 @@
 
     // your code here
 
+    var button = document.querySelector('#run');
+
+    button.addEventListener('click', function() {
+        /*
+           fruits.forEach((fruits, index) => {
+               console.log(`${index+1} -- ${fruits}`);
+               
+           })
+        */
+           fruits.forEach(function(fruits, index) {
+                console.log(`${index+1} -- ${fruits}`);
+           })
+    });
+
 })();

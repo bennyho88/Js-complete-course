@@ -10,7 +10,21 @@
 // You will have time to focus on it later.
 
 (function() {
+    var button = document.querySelector('#run');
+    var background = document.querySelector('.content');
 
     // your code here
+    button.addEventListener('click', function() {
+
+     var randomColors = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+
+         /*
+         // Math.pow is slow, use constant instead.
+var color = Math.floor(Math.random() * 16777216).toString(16);
+// Avoid loops.
+return '#000000'.slice(0, -color.length) + color;
+        */
+        background.style.backgroundColor = randomColors;
+    })
 
 })();

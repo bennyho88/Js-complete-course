@@ -11,6 +11,27 @@
 
 (function() {
 
-    // your code here
 
+    // Value of data-image
+    var valueDataImage = document.querySelector('#source').getAttribute("data-image");
+    console.log(valueDataImage);
+
+    // Create new img element
+
+    var image = document.createElement('img');
+    console.log(image);
+
+    // put the new img element in the target element
+    image.setAttribute('src', valueDataImage);
+
+    // display image with value of data-image
+
+    document.getElementById('target').appendChild(image);
+
+    // remove orginal element
+
+    document.getElementById('source').remove();
+    // your code here
+   
+    
 })();

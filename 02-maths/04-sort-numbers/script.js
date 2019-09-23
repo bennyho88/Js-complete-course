@@ -13,26 +13,28 @@
 
     // to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+    var button = document.querySelector('#run');
+    var input = document.querySelector('#numbers');
+    var inputValue = document.querySelector('#numbers').value;
 
-        // your code here
-
-        var values = document.getElementById('numbers').value;
-        console.log(values);
-        
-        /*
-        var array = [values];
-        array.sort(function(a,b){
-            return a - b
-        });
-
-        console.log(array);
     
-        */
+
+    button.addEventListener('click', function() {
         /*
-        var arrayCor = array.sort();
-        console.log(arrayCor);
+        let ordernumbers = document.getElementById("numbers").value.split(", ");
+        ordernumbers.sort((a, b) => a - b);
+        alert(ordernumbers);
         */
+
+        var arr = inputValue.split(", ");
+
+        console.log(arr);
+
+        var orderNumbers = arr.sort((a,b) => a -b);
+        alert(orderNumbers);
+   
     });
+
+    
 
 })();

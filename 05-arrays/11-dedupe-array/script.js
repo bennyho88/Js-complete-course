@@ -29,5 +29,17 @@
     ];
 
     // your code here
+    var button = document.querySelector('#run');
 
+    button.addEventListener('click', function() {
+
+        
+        //1.  new Set removes all duplicates
+        const newArr = new Set(fruits);
+        console.log(newArr);
+        
+
+       
+
+    })
 })();

@@ -89,6 +89,16 @@
         },
     ];
 
-    // your code here
+    var button = document.querySelector('#run');
 
+    // your code here
+    button.addEventListener('click', function() {
+        
+        
+        
+        let sumAge = people.reduce((a,b) => a + b.age, 0);
+        console.log(sumAge);
+        console.log(`The sum of all ages is ${sumAge}`);
+        
+    } )
 })();

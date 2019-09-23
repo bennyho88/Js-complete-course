@@ -10,7 +10,31 @@
 // You will have time to focus on it later.
 
 (function() {
-
+    var button = document.querySelector('#run');
+    var day = document.querySelector('#dob-day');
+    var month = document.querySelector('#dob-month');
+    var year = document.querySelector('#dob-year');
     // your code here
+
+    button.addEventListener('click', function() {
+
+        var dayValue = day.value;
+        var monthValue = month.value;
+        var yearValue = year.value;
+
+        var birthDate = dayValue + '/' + monthValue + '/' + yearValue;
+        console.log(birthDate);
+
+        var age = 2019 - yearValue;
+        alert('Your birthdate is ' + birthDate + ' and age is ' + age);
+        
+/*
+        var age = function calculateAge() {
+           return 2019 - yearValue;
+           
+        }
+*/
+    
+    });
 
 })();

@@ -12,13 +12,18 @@
 (function() {
     
   // to get the value of an input: document.getElementById("element-id").value
+ 
+  var button = document.querySelector('#run');
 
-  var input = document.getElementById('element-id').value;
-
-  document.getElementById("run").addEventListener("click", function() {
+  button.addEventListener("click", function() {
 
       // your code here
-    console.log("hello");
+      let x = document.getElementById("number").value;
+
+      for (var i = x - 1; i >= 1; i--) {
+        x = x * i;
+      }
+      alert(x);
   });
 
 })();

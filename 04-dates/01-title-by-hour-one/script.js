@@ -12,7 +12,18 @@
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    var tag = document.querySelector('#target');
 
     // your code here
+    var time = new Date();
+    var hours = time.getHours();
 
+    console.log(hours)
+
+    if (hours < 18) {
+        tag.innerHTML = "<em>Hello<em>";
+    } else {
+        tag.innerHTML = "<em>Good Evening<em>";
+    }
+    
 })();

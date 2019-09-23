@@ -13,4 +13,21 @@
 
     // your code here
 
+    var button = document.querySelector('#run');
+    
+
+    button.addEventListener('click', function() {
+        var passwordOne = document.querySelector('#pass-one').value;
+        var passwordTwo = document.querySelector('#pass-two').value;
+
+        if ( passwordOne === passwordTwo) {
+            document.querySelector('#pass-one').style.borderColor = "green";
+            document.querySelector('#pass-two').style.borderColor = "green";
+        } else {
+            document.querySelector('#pass-one').style.borderColor = "red";
+            document.querySelector('#pass-two').style.borderColor = "red";
+        }
+        
+    })
+
 })();

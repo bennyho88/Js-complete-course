@@ -10,7 +10,15 @@
 // You will have time to focus on it later.
 
 (function() {
+    var input = document.getElementById('color');
+    var button = document.getElementById('run');
 
     // your code here
 
+    button.addEventListener('click', function() {
+        var inputValue = input.value;
+        console.log(inputValue);
+        
+        document.querySelector('.content').style.backgroundColor = inputValue;
+    });
 })();

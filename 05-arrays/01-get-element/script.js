@@ -28,4 +28,10 @@
 
     // your code here
 
+    var button = document.querySelector('#run');
+
+    button.addEventListener('click', function() {
+        console.log(fruits[3]);
+    })
+
 })();

@@ -11,6 +11,9 @@
 
 (function() {
 
-    // your code here
+    var inputValue = document.querySelector('#pass-one').value;
+    var span = document.querySelector('#counter');
 
+    // your code here
+    console.log(inputValue);
 })();

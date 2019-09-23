@@ -12,5 +12,24 @@
 (function() {
 
     // your code here
+    var redBtn = document.getElementById('red');
+    var greenBtn = document.getElementById('green');
+    var yellowBtn = document.getElementById('yellow');
+    var blueBtn = document.getElementById('blue');
 
+    redBtn.addEventListener('click', function() {
+        document.querySelector('.content').style.backgroundColor = "red";
+    })
+
+    greenBtn.addEventListener('click', function() {
+        document.querySelector('.content').style.backgroundColor = "green";
+    })
+
+    yellowBtn.addEventListener('click', function() {
+        document.querySelector('.content').style.backgroundColor = "yellow";
+    })
+
+    blueBtn.addEventListener('click', function() {
+        document.querySelector('.content').style.backgroundColor = "blue";
+    })
 })();

@@ -13,4 +13,24 @@
 
     // your code here
 
+    var img = document.querySelector('img');
+    var original = img.getAttribute('src');
+
+    img.addEventListener('mouseover', function() {
+        console.log('hello');
+        // get value data-hover
+
+        var kiss = img.getAttribute('data-hover');
+        
+
+        // change src attribute to value from data-hover
+
+        img.setAttribute('src', kiss);
+    })
+    
+    img.addEventListener('mouseout', function() {
+        img.src = original;
+    })
+    
+    
 })();

@@ -12,7 +12,29 @@
 (function() {
 
     // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    
+    var tag = document.querySelector('#target');
 
     // your code here
 
+    function addZero(i) {
+        if (i < 10) {
+            i = "0" + i;
+        }
+        return i;
+    }
+    var date = new Date();
+    var hours = addZero(date.getHours());
+    var minutes = addZero(date.getMinutes());
+
+    var time = hours + ':' + minutes;
+
+    console.log(time);
+
+    if (hours <= 17 && minutes <= 30) {
+        tag.innerHTML = '<em>Hello<em>'
+    } else {
+        tag.innerHTML = '<em>Good Evening<em>'
+    }
+    
 })();

@@ -10,7 +10,7 @@
 // You will have time to focus on it later.
 
 (function() {
-
+var tag = document.getElementsByTagName("P")[1];
     // your code here
-
+tag.innerHTML = 'owned';
 })();

@@ -21,4 +21,24 @@
 
     // your code here
 
+    var button = document.querySelector('#next');
+    var image = document.querySelector('img');
+
+    button.addEventListener('click', function() {
+
+        /*
+        for (var i = 0; i < gallery.length; i++) {
+            image.setAttribute('src', gallery[i]);
+        }
+        */
+       var newImage = image.setAttribute('src', gallery[1]);
+       
+
+      
+        
+    
+
+        
+    })
+
 })();
